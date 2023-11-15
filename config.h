@@ -89,13 +89,13 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class             instance     title           tags mask  isfloating  isterminal   noswallow  monitor */
+	{ "st",              NULL,        NULL,           1 << 1,    0,          1,           0,         -1 },
 	{ "Thorium-browser", NULL,        NULL,           1 << 2,    0,          0,           0,         -1 },
 	{ "thunderbird",     NULL,        NULL,           1 << 3,    0,          0,           0,         -1 },
 	{ "Virt-manager",    NULL,        NULL,           1 << 5,    0,          0,           0,         -1 },
 	{ "steam",           NULL,        NULL,           1 << 6,    0,          0,           0,         -1 },
 	{ "discord",         NULL,        NULL,           1 << 7,    0,          0,           0,         -1 },
 	{ "Spotify",         NULL,        NULL,           1 << 8,    0,          0,           0,         -1 },
-	{ "st",              NULL,        NULL,           0,         0,          1,           0,         -1 },
 	{ "zoom",            NULL,        NULL,           0,         0,          0,           0,         -1 },
 	{ "feh",             NULL,        NULL,           0,         0,          0,           0,         -1 },
 	{ "mpv",             NULL,        NULL,           0,         0,          0,           0,         -1 },
