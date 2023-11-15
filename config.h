@@ -42,12 +42,12 @@ static const char *colors[][3]      = {
 	[SchemeNorm]     = { norm_fg,   norm_bg,   norm_border }, // Unfocused windows
 	[SchemeSel]      = { sel_fg,    sel_bg,    sel_border  }, // The focused window
 	[SchemeUrg]      = { urg_fg,    urg_bg,    urg_border  },
-	[SchemeTitle]    = { col_gray4, col_cyan,  col_cyan    },
-	[SchemeStatus]   = { col_gray3, col_gray1, "#000000"   }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]  = { col_gray4, col_cyan,  "#000000"   }, // Tagbar left selected {text,background,not used but cannot be empty}
-	[SchemeTagsNorm] = { col_gray3, col_gray1, "#000000"   }, // Tagbar left unselected {text,background,not used but cannot be empty}
-	[SchemeInfoSel]  = { col_gray4, col_cyan,  "#000000"   }, // infobar middle  selected {text,background,not used but cannot be empty}
-	[SchemeInfoNorm] = { col_gray3, col_gray1, "#000000"   }, // infobar middle  unselected {text,background,not used but cannot be empty}
+	[SchemeTitle]    = { sel_fg,    sel_bg,    sel_border  },
+	[SchemeStatus]   = { norm_fg,   norm_bg,   "#000000"   }, // Statusbar right {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  = { sel_fg,    sel_bg,    "#000000"   }, // Tagbar left selected {text,background,not used but cannot be empty}
+	[SchemeTagsNorm] = { norm_fg,   norm_bg,   "#000000"   }, // Tagbar left unselected {text,background,not used but cannot be empty}
+	[SchemeInfoSel]  = { sel_fg,    sel_bg,    "#000000"   }, // infobar middle  selected {text,background,not used but cannot be empty}
+	[SchemeInfoNorm] = { norm_fg,   norm_bg,   "#000000"   }, // infobar middle  unselected {text,background,not used but cannot be empty}
 };
 static const unsigned int alphas[][3]      = {
     /*               fg      bg        border      */
