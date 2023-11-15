@@ -13,9 +13,9 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
 static const int viewonrulestag     = 1;	/* 1 means when open applications view will move to tags defined in rules*/
-static const int user_bh            = 2;        /* 2 is the default spacing around the bar's font */
-static const char *fonts[]          = { "FiraCode Nerd Font Mono:size=16" };
-static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=14";
+static const int user_bh            = 8;        /* 2 is the default spacing around the bar's font */
+static const char *fonts[]          = { "Symbols Nerd Font:size=18", "Iosevka Nerd Font Mono:size=16"};
+static const char dmenufont[]       = "Iosevka Nerd Font Mono:size=14";
 
 /* Default dwm colors */
 static const char col_gray1[]       = "#222222";
@@ -50,7 +50,7 @@ static const char *colors[][3]      = {
 	[SchemeUrg]      = { urg_fg,    urg_bg,    urg_border  },
 	[SchemeTitle]    = { norm_fg,   norm_bg,   norm_border },
 	[SchemeStatus]   = { norm_fg,   norm_bg,   "#000000"   }, // Statusbar right {text,background,not used but cannot be empty}
-	[SchemeTagsSel]  = { sel_fg,    sel_bg,    "#000000"   }, // Tagbar left selected {text,background,not used but cannot be empty}
+	[SchemeTagsSel]  = { sel_fg,    norm_bg,   "#000000"   }, // Tagbar left selected {text,background,not used but cannot be empty}
 	[SchemeTagsNorm] = { norm_fg,   norm_bg,   "#000000"   }, // Tagbar left unselected {text,background,not used but cannot be empty}
 	[SchemeInfoSel]  = { sel_fg,    sel_bg,    "#000000"   }, // infobar middle  selected {text,background,not used but cannot be empty}
 	[SchemeInfoNorm] = { norm_fg,   norm_bg,   "#000000"   }, // infobar middle  unselected {text,background,not used but cannot be empty}
@@ -66,7 +66,7 @@ static const char *tags[]    = { "", "", "", "󰇮", "󰨇", "", "�
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 static const int momentaryalttags = 0; /* 1 means alttags will show only when key is held down */
 
-static const unsigned int ulinepad	= 5;	/* horizontal padding between the underline and tag */
+static const unsigned int ulinepad	= 4;	/* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke	= 2;	/* thickness / height of the underline */
 static const unsigned int ulinevoffset	= 0;	/* how far above the bottom of the bar the line should appear */
 static const int ulineall 		= 0;	/* 1 to show underline on all tags, 0 for just the active ones */
