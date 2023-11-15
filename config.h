@@ -25,21 +25,16 @@ static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_urgborder[]   = "#ff0000";
 
-/* Pywal colors (base16-harmonic) */
-static const char norm_fg[]         = "#f7f9fb";
-static const char norm_bg[]         = "#0b1c2c";
-static const char norm_border[]     = "#627e99";
-static const char sel_fg[]          = "#f7f9fb";
-//static const char sel_bg[]        = "#56bf8b"; /* Light green */
-//static const char sel_border[]    = "#f7f9fb";
-static const char urg_fg[]          = "#f7f9fb";
-static const char urg_bg[]          = "#bf8b56";
-static const char urg_border[]      = "#bf8b56";
-
-/* Custom colors */
-static const char sel_bg[]          = "#4c9edf"; /* Light blue wallpaper color */
-static const char sel_border[]      = "#4c9edf"; /* Light blue wallpaper color */
-//static const char sel_bg[]        = "#568bbf"; /* Light blue prompt color */
+/* Pywal colors (base16-materialer) */
+static const char norm_fg[]     = "#FFFFFF";
+static const char norm_bg[]     = "#212121";
+static const char norm_border[] = "#4A4A4A";
+static const char sel_fg[]      = "#FFFFFF";
+static const char sel_bg[]      = "#C3E88D";
+static const char sel_border[]  = "#FFFFFF";
+static const char urg_fg[]      = "#FFFFFF";
+static const char urg_bg[]      = "#F07178";
+static const char urg_border[]  = "#F07178";
 
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
