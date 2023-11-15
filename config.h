@@ -12,7 +12,7 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int user_bh            = 2;        /* 2 is the default spacing around the bar's font */
-static const char *fonts[]          = { "FiraCode Nerd Font Mono:size=14" };
+static const char *fonts[]          = { "FiraCode Nerd Font Mono:size=16" };
 static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=14";
 
 /* Default dwm colors */
