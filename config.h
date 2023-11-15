@@ -68,10 +68,21 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
+	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
+	{ "st",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
-	{ "st",      NULL,     NULL,           0,         0,          1,           0,        -1 },
-	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
+	{ "Thorium-browser", NULL, NULL,       0,         0,          0,           0,        -1 },
+	{ "thunderbird", NULL, NULL,           0,         0,          0,           0,        -1 },
+	{ "Virt-manager", NULL, NULL,          0,         0,          0,           0,        -1 },
+	{ "discord", NULL, NULL,               0,         0,          0,           0,        -1 },
+	{ "steam", NULL, NULL,                 0,         0,          0,           0,        -1 },
+	{ NULL, "Zathura", NULL,               0,         0,          0,           0,        -1 },
+	{ "Deluge", NULL, NULL,                0,         0,          0,           0,        -1 },
+	{ "qpwgraph", NULL, NULL,              0,         0,          0,           0,        -1 },
+	{ "zoom", NULL, NULL,                  0,         0,          0,           0,        -1 },
+	{ "feh", NULL, NULL,                   0,         0,          0,           0,        -1 },
+	{ "mpv", NULL, NULL,                   0,         0,          0,           0,        -1 },
 };
 
 /* layout(s) */
