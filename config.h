@@ -62,7 +62,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[]    = { "", "", "", "󰇮", "󰨇", "", "", "󰙯", "" };
+static const char *tags[]    = { "", "", "", "󰇮", "", "󰑋", "", "󰙯", "" };
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 static const int momentaryalttags = 0; /* 1 means alttags will show only when key is held down */
 
@@ -92,7 +92,8 @@ static const Rule rules[] = {
 	{ "st",              NULL,        NULL,           1 << 1,    0,          1,           0,         -1 },
 	{ "Thorium-browser", NULL,        NULL,           1 << 2,    0,          0,           0,         -1 },
 	{ "thunderbird",     NULL,        NULL,           1 << 3,    0,          0,           0,         -1 },
-	{ "Virt-manager",    NULL,        NULL,           1 << 5,    0,          0,           0,         -1 },
+	{ "Virt-manager",    NULL,        NULL,           1 << 4,    0,          0,           0,         -1 },
+	{ "obs",             NULL,        NULL,           1 << 5,    0,          0,           0,         -1 },
 	{ "steam",           NULL,        NULL,           1 << 6,    0,          0,           0,         -1 },
 	{ "discord",         NULL,        NULL,           1 << 7,    0,          0,           0,         -1 },
 	{ "Spotify",         NULL,        NULL,           1 << 8,    0,          0,           0,         -1 },
@@ -102,7 +103,6 @@ static const Rule rules[] = {
 	{ "Gimp",            NULL,        NULL,           0,         1,          0,           0,         -1 },
 	{ "qpwgraph",        NULL,        NULL,           0,         0,          0,           0,         -1 },
 	{ "Deluge",          NULL,        NULL,           0,         0,          0,           0,         -1 },
-	{ "obs",             NULL,        NULL,           0,         0,          0,           0,         -1 },
 	{ NULL,              "Zathura",   NULL,           0,         0,          0,           0,         -1 },
 	{ NULL,              NULL,        "Event Tester", 0,         0,          0,           1,         -1 }, /* xev */
 };
