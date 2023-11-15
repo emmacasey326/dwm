@@ -23,17 +23,19 @@ static const char col_cyan[]        = "#005577";
 static const char col_urgborder[]   = "#ff0000";
 
 /* Pywal colors (base16-harmonic) */
-static const char norm_fg[] = "#f7f9fb";
-static const char norm_bg[] = "#0b1c2c";
-static const char norm_border[] = "#627e99";
+static const char norm_fg[]         = "#f7f9fb";
+static const char norm_bg[]         = "#0b1c2c";
+static const char norm_border[]     = "#627e99";
+static const char sel_fg[]          = "#f7f9fb";
+//static const char sel_bg[]        = "#56bf8b"; /* Light green */
+static const char sel_border[]      = "#f7f9fb";
+static const char urg_fg[]          = "#f7f9fb";
+static const char urg_bg[]          = "#bf8b56";
+static const char urg_border[]      = "#bf8b56";
 
-static const char sel_fg[] = "#f7f9fb";
-static const char sel_bg[] = "#56bf8b";
-static const char sel_border[] = "#f7f9fb";
-
-static const char urg_fg[] = "#f7f9fb";
-static const char urg_bg[] = "#bf8b56";
-static const char urg_border[] = "#bf8b56";
+/* Custom colors */
+static const char sel_bg[]          = "#4c9edf"; /* Light blue wallpaper color */
+//static const char sel_bg[]        = "#568bbf"; /* Light blue prompt color */
 
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
@@ -42,7 +44,7 @@ static const char *colors[][3]      = {
 	[SchemeNorm]     = { norm_fg,   norm_bg,   norm_border }, // Unfocused windows
 	[SchemeSel]      = { sel_fg,    sel_bg,    sel_border  }, // The focused window
 	[SchemeUrg]      = { urg_fg,    urg_bg,    urg_border  },
-	[SchemeTitle]    = { sel_fg,    sel_bg,    sel_border  },
+	[SchemeTitle]    = { norm_fg,   norm_bg,   norm_border },
 	[SchemeStatus]   = { norm_fg,   norm_bg,   "#000000"   }, // Statusbar right {text,background,not used but cannot be empty}
 	[SchemeTagsSel]  = { sel_fg,    sel_bg,    "#000000"   }, // Tagbar left selected {text,background,not used but cannot be empty}
 	[SchemeTagsNorm] = { norm_fg,   norm_bg,   "#000000"   }, // Tagbar left unselected {text,background,not used but cannot be empty}
