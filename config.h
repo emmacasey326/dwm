@@ -28,13 +28,14 @@ static const char norm_bg[]         = "#0b1c2c";
 static const char norm_border[]     = "#627e99";
 static const char sel_fg[]          = "#f7f9fb";
 //static const char sel_bg[]        = "#56bf8b"; /* Light green */
-static const char sel_border[]      = "#f7f9fb";
+//static const char sel_border[]    = "#f7f9fb";
 static const char urg_fg[]          = "#f7f9fb";
 static const char urg_bg[]          = "#bf8b56";
 static const char urg_border[]      = "#bf8b56";
 
 /* Custom colors */
 static const char sel_bg[]          = "#4c9edf"; /* Light blue wallpaper color */
+static const char sel_border[]      = "#4c9edf"; /* Light blue wallpaper color */
 //static const char sel_bg[]        = "#568bbf"; /* Light blue prompt color */
 
 static const unsigned int baralpha = 0xd0;
@@ -62,27 +63,39 @@ static const char *tags[]    = { "", "", "", "󰇮", "󰨇", "", "�
 static const char *tagsalt[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 static const int momentaryalttags = 0; /* 1 means alttags will show only when key is held down */
 
+/* Tag Masks:
+ * Tab 1 = 1 << 0
+ * Tab 2 = 1 << 1
+ * Tab 3 = 1 << 2
+ * Tab 4 = 1 << 3
+ * Tab 5 = 1 << 4
+ * Tab 6 = 1 << 5
+ * Tab 7 = 1 << 6
+ * Tab 8 = 1 << 7
+ * Tab 9 = 1 << 8
+ * Any = 0
+ */
 static const Rule rules[] = {
 	/* xprop(1):
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
-	{ "st",      NULL,     NULL,           0,         0,          1,           0,        -1 },
-	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
-	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
-	{ "Thorium-browser", NULL, NULL,       0,         0,          0,           0,        -1 },
-	{ "thunderbird", NULL, NULL,           0,         0,          0,           0,        -1 },
-	{ "Virt-manager", NULL, NULL,          0,         0,          0,           0,        -1 },
-	{ "discord", NULL, NULL,               0,         0,          0,           0,        -1 },
-	{ "steam", NULL, NULL,                 0,         0,          0,           0,        -1 },
-	{ NULL, "Zathura", NULL,               0,         0,          0,           0,        -1 },
-	{ "Deluge", NULL, NULL,                0,         0,          0,           0,        -1 },
-	{ "qpwgraph", NULL, NULL,              0,         0,          0,           0,        -1 },
-	{ "zoom", NULL, NULL,                  0,         0,          0,           0,        -1 },
-	{ "feh", NULL, NULL,                   0,         0,          0,           0,        -1 },
-	{ "mpv", NULL, NULL,                   0,         0,          0,           0,        -1 },
+	/* class             instance     title           tags mask  isfloating  isterminal   noswallow  monitor */
+	{ "Thorium-browser", NULL,        NULL,           1 << 2,    0,          0,           0,         -1 },
+	{ "thunderbird",     NULL,        NULL,           1 << 3,    0,          0,           0,         -1 },
+	{ "Virt-manager",    NULL,        NULL,           1 << 5,    0,          0,           0,         -1 },
+	{ "steam",           NULL,        NULL,           1 << 6,    0,          0,           0,         -1 },
+	{ "discord",         NULL,        NULL,           1 << 7,    0,          0,           0,         -1 },
+	{ "Spotify",         NULL,        NULL,           1 << 8,    0,          0,           0,         -1 },
+	{ "st",              NULL,        NULL,           0,         0,          1,           0,         -1 },
+	{ "zoom",            NULL,        NULL,           0,         0,          0,           0,         -1 },
+	{ "feh",             NULL,        NULL,           0,         0,          0,           0,         -1 },
+	{ "mpv",             NULL,        NULL,           0,         0,          0,           0,         -1 },
+	{ "Gimp",            NULL,        NULL,           0,         1,          0,           0,         -1 },
+	{ "qpwgraph",        NULL,        NULL,           0,         0,          0,           0,         -1 },
+	{ "Deluge",          NULL,        NULL,           0,         0,          0,           0,         -1 },
+	{ NULL,              "Zathura",   NULL,           0,         0,          0,           0,         -1 },
+	{ NULL,              NULL,        "Event Tester", 0,         0,          0,           1,         -1 }, /* xev */
 };
 
 /* layout(s) */
